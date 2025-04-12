@@ -12,6 +12,7 @@ class BadBankAccount:
     def __init__(self, balance):
         self.balance = balance
 
+
 # No error, even though the balance cannot be negative.
 account = BadBankAccount(0)
 account.balance = -1
