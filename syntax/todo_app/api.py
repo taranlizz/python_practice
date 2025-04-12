@@ -41,7 +41,7 @@ def create(task_list):
 def update(task_list):
     task = getters.get_task_by_id(task_list)
 
-    if task == None:
+    if task is None:
         return
 
     fields_to_update_list = getters.get_fields_list()
@@ -66,7 +66,7 @@ def update(task_list):
 def delete(task_list):
     task_to_delete = getters.get_task_by_id(task_list)
 
-    if task_to_delete == None:
+    if task_to_delete is None:
         return
 
     task_list.remove(task_to_delete)
