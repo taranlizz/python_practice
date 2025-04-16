@@ -1,6 +1,4 @@
 import uuid
-from prompt_toolkit import prompt
-from prompt_toolkit.completion import WordCompleter
 import datetime
 import getters
 
